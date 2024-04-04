@@ -32,3 +32,21 @@ In the telecom industry, customers are able to choose from a pool of companies t
 - **MonthlyCharges** : The amount charged to the customer monthly
 - **TotalCharges** : The total amount charged to the customer
 - **Churn** : Whether the customer churned or not (Yes or No)
+
+Data Modeling:
+Trained different classifier models - XGBoost, Random Forest, Decision Tree Classifier, Logistic Regression, Naive Bayes, SVM and KNN  and optimized hyperparameters (GridsearchCV) to enhance performance.
+
+Implemented a validation pipeline utilizing 5-fold cross-validation. For each classifier, reported F1 score, Cross-validation score, Precision, Recall, Accuracy). Also, for each model, plotted the ROC-AUC curve.
+
+Then, combined classifiers into an ensemble that outperforms each individual classifier. 
+
+Evaluation and Reporting:
+Selected a model that is expected to perform optimally on the unseen data and provide the predictions accordingly. After evaluating the results on the unseen data (X_test), it's evident that the XGBoost and KNN models have demonstrated excellent performance in the ensemble. Therefore, we have decided to utilize these models for making predictions on the test.csv dataset.
+
+External validation:
+
+A dataset named ‘test.csv’ is being used for external validation in which the label is hidden. You have to choose the best model(the model which has the highest score) and then use that model to predict the label on the ‘test.csv’.
+
+After prediction, converted the array of O's and 1's to csv file, named it as ‘submission.csv'.
+
+
