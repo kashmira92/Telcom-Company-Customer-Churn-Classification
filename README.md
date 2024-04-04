@@ -49,6 +49,6 @@ Selected a model that is expected to perform optimally on the unseen data and pr
 
 A dataset named ‘test.csv’ is being used for external validation in which the label is hidden. You have to choose the best model(the model which has the highest score) and then use that model to predict the label on the ‘test.csv’.
 
-After prediction, converted the array of O's and 1's to csv file, named it as ‘submission.csv'.
+After prediction, converted the array of 0's and 1's to csv file, named it as ‘submission.csv'.
 
 
