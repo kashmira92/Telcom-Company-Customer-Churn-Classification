@@ -39,6 +39,8 @@ Trained different classifier models - XGBoost, Random Forest, Decision Tree Clas
 Implemented a validation pipeline utilizing 5-fold cross-validation. For each classifier, reported F1 score, Cross-validation score, Precision, Recall, Accuracy). Also, for each model, plotted the ROC-AUC curve.
 
 Then, combined classifiers into an ensemble that outperforms each individual classifier. 
+![image](https://github.com/kashmira92/Telcom-Company-Customer-Churn-Classification/assets/48323327/9277c4ca-781d-40c7-b9ee-8c6803a1f7ce)
+
 
 ## Evaluation and Reporting:
 Selected a model that is expected to perform optimally on the unseen data and provide the predictions accordingly. After evaluating the results on the unseen data (X_test), it's evident that the XGBoost and KNN models have demonstrated excellent performance in the ensemble. Therefore, we have decided to utilize these models for making predictions on the test.csv dataset.
